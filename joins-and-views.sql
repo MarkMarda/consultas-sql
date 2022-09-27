@@ -81,7 +81,7 @@ insert into transactions (id, account_ori, account_des, amount, transaction_type
 insert into transactions (id, account_ori, account_des, amount, transaction_type, trans_date) values(default, 5, 6, 500, 3, NOW());
 
 
--- Consultas
+-- Joins
 select clients.id, first_name, last_name, email, account_no, balance from clients left join accounts on clients.id = accounts.client_id;
 
 select account_no, client_id, name from accounts left join account_types on accounts.id = account_types.id;
