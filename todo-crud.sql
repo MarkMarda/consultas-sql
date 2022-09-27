@@ -1,4 +1,4 @@
-//created db-diagram
+--- created db-diagram
 CREATE TABLE "todo" (
   "task_id" uuid PRIMARY KEY,
   "task_name" varchar,
@@ -12,7 +12,7 @@ CREATE TABLE "todo" (
   "task_relevance" varchar
 );
 
-//DBeaver
+--- DBeaver
 insert into todo (
 	task_id,
   	task_name,
@@ -75,7 +75,7 @@ values
 	'No importante'
 );
 
-//Consultas
+--- Consultas
 select task_id, task_name, task_status, task_relevance from todo; 
 
-select * from todo where task_status = 'Finished'
+select * from todo where task_status = 'Finished';
